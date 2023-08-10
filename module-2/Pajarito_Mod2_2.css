@@ -1,0 +1,30 @@
+Body {
+    Font-size: 16px;}
+H1 {
+    Text-transform: uppercase;
+    Font-weight: 700;
+    Text-align: center;}
+H2 {
+    Font-weight: 500
+    Text-align: left;
+    Padding-top: 15px;}
+P.intro{
+    Font-weight: 400
+    Line-height: 1.4em;
+    Text-indent: 2em;}
+P  {
+    Font-weight: 400;
+    Line-height: 1.4em;
+A :link {
+    Font-style: bold;
+    Font-size: 1.25em
+    Font-color: #4F3674;
+    Text-decoration: none;
+    Text-align: center;}
+A:hover {
+    Color: #D6A800;
+    Text-decoration: underline;}
+A:visited {
+    Font-style: italic;}
+Span {
+    Font-style: italic;}
