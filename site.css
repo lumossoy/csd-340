@@ -1,0 +1,39 @@
+Container {
+    Margin-top: 50px;
+    Margin-left: 100px;
+    Margin-right: 100px;}
+H1 {
+    Background-color: #0099d6;
+    color: white;
+    Font-weight: 700;
+    Text-align: left;
+    Border: 1px solid #D6A800;
+    Padding: 10px;}
+H2 {
+    Background-color: #0099d6;
+    color: white;
+    Text-align: left;
+    Border: 1px solid #D6A800;
+    Padding: 10px;}
+H3 {
+    Background-color: #0099d6;
+    color: white;
+    Text-align: left;
+    Border: 1px solid #D6A800;
+    Padding: 10px;}
+H4 {
+    Background-color: #0099d6;
+    color: white;
+    Text-align: left;
+    Border: 1px solid #D6A800;
+    Padding: 10px;}
+A :link {
+    Font-weight: bold;
+    Font-size: 1.25em;
+    color: #0087bd;
+    Text-decoration: none !important;}
+A:hover {
+    Color: #0087bd;
+    Text-decoration: none !important;}
+A:visited{
+    Color: #0087bd;}
