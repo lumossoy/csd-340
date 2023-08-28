@@ -1,0 +1,36 @@
+Body {
+    Font-size: 16px;}
+H1 {
+    Text-transform: uppercase;
+    Font-weight: 700;
+    Text-align: center;}
+H3 {
+    Font-weight: 200;
+    Text-align: center;
+    Padding-top: 15px;}
+image-gallery {
+    Display: grid;
+    grid-template-columns:auto auto auto;}
+book-image {
+    Margin-top: 10%;
+    width: 30%;
+    border: 2px solid pink;
+    grid-row-start: 1;
+    grid-row-end: 3;}
+Figure {
+    Text-align: center;}
+Figcaption {
+    Text-align: center;
+    Font-style: italic;
+    Font-size: .75em}
+A :link {
+    Font-size: 1.25em;
+    Color: #4F3674;
+    Text-decoration: none;
+    Text-align: center;
+    Float: right;}
+A:hover {
+    Color: #D6A800;
+    Text-decoration: underline;}
+A:visited {
+    Font-style: italic;}
