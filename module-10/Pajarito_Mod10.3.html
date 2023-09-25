@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--Emely Pajarito Assignment 10.3 -->
+<html lang="en">
+  <head>
+	<title> CSD 340 Web Development with HTML and CSS </title>
+	<script>
+	 function displayImage(imageFile){
+        var largerImage = document.getElementById("mainImage");
+        var newNode = document.createElement("img");
+        newNode.id = "mainImage";
+        newNode.src = imageFile;
+        newNode.alt = "Large Image";
+        newNode.className = "mainImage";
+        newNode.style.width = "300px";
+        newNode.style.height = "200px";
+        largerImage.parentNode.replaceChild(newNode, largerImage);
+      }
+	  </script>
+  </head>
+  <body>
+	<br>
+	<div>
+		<a href="/Users/emelypajarito/csd/csd-340/csd-340/module-10/mod10images/flower2.jpg" onmouseover="flower.src='flower2.jpg';" onmouseout="flower.src='flower.jpg';">
+			<img border="0" name="flower" src="flower.jpg">
+		</a>
+	</div>
+	<br>
+	<div onmouseover="this.style.color='red';" onmouseout="this.style.color='black';" style="color: black;">"Hover over image to change it"
+		<br>
+	</div>
+	<div>
+		<a href="/Users/emelypajarito/csd/csd-340/csd-340/module-10/mod10images/moon.jpg" onmouseover="moon.src='fullmoon.jpg';" onmouseout="moon.src='moon.jpg';">
+			<img border="0" name ="moon" src="moon.jpg">
+		</a>
+	</div>
+	<br>
+	<div onmouseover="this.style.color='red';" onmouseout="this.style.color='black';" style ='color: black;'> "Hover over image to change it"
+		<br>
+		"More words"
+	</div>
+  </body>
+</html>
