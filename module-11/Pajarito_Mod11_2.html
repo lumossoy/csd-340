@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--Emely Pajarito Assignment 11.2 -->
+<html lang="en - us">
+  <head>
+     <title> CSD 340 Development with HTML and CSS </title>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Assignment 11.2: JavaScript - Part 3</h1>
+      <br>
+      <p>Virtual To Do List: </p>
+      <form action="/url" method="GET">
+        <label>
+          <input type="text" name="input" minlength="3" placeholder="">
+        </label>
+        <button type="button" onclick="yeet()">Add</button>
+        <button type="button" onclick="Array.pop()">Delete Last Entry</button>
+        <button type="button" onclick="yeet()">Display</button>
+      </form>
+      <br>
+      <hr>
+      <br>
+      <div id="output"></div>
+    </div>
+  
+    <script>
+      var Array = [];
+      var arraySize = Array.length;
+  
+      function yeet() {
+        var input = document.querySelector('input[name="input"]').value;
+        Array.push(input);
+        alert('Added: ' + input);
+        displayArray();
+      }
+  
+      function displayArray() {
+        var output = document.getElementById('output');
+        output.innerHTML = '<ul>';
+        for (var i = 0; i < Array.length; i++) {
+          output.innerHTML += '<li>' + (i + 1) + '. ' + Array[i] + '</li>';
+        }
+        output.innerHTML += '</ul>';
+      }
+    </script>
+  </body>
+  </html>
