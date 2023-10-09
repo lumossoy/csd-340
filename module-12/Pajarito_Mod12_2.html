@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--Emely Pajarito Assignment 12.2 -->
+<html lang="en">
+  <head>
+    <title> CSD 340 Web Development with HTML and CSS</title>
+    <link href="/Users/emelypajarito/csd/csd-340/csd-340/module-12/Pajarito_Mod12_2.css" type="text/css"
+	rel="stylesheet">
+  </head>
+  <div id="container">
+    <style>
+        h1 {text-align: center;}
+    </style>
+    <h1>
+        "Assignment 12.2: JavaScript - Part 4"
+    </h1>
+    <body>
+    <div class="books">
+        <p>
+            <button type="button"
+               onclick="myfunction1()">Top to Bottom</button>
+    
+            <button type="button"
+               onclick="myfunction2()">Bottom to Top</button>
+        </p>
+        <script>
+            const books = ["The Whisper Man", "The Great Gatsby", "The House in the Cerulean Sea", "In the Lives of Puppets", "How To Sell A Haunted House", "All This Could Be Different", "Little Fires Everywhere", "Rich People Problems", "The Vanishing Half", "The Glass Hotel" ];
+            document.getElementById("booklist").innerHTML = books;
+            function myfunction1() {
+                books.sort();
+                document.getElementById("booklist").innerHTML = books;
+            }
+            function myfunction2() {
+                books.sort(function(a, b) {return a - b});
+                document.getElementById("booklist").innerHTML = books;
+            }
+         </script>
+
+         <div class="book-titles">
+             <h3> Top 10 Favorite Books</h3>
+         </div>
+        <div class="book-content"> 
+            <p id="booklist">
+            <ol>
+                <li>The Whisper Man</li>
+                <li>The Great Gatsby</li>
+                <li>The House in the Cerulean Sea</li>
+                <li>In the Lives of Puppets</li>
+                <li>How To Sell A Haunted House</li>
+                <li>All This Could Be Different</li>
+                <li>Little Fires Everywhere</li>
+                <li>Rich People Problems</li>
+                <li>The Vanishing Half</li>
+                <li>The Glass Hotel</li>
+            </ol>
+            </p>
+        </div>
+    </div>
+    <div class ="csd">
+        <div class="csd-title">
+             <h3> 5 Things I've Learned Since the Course Started</h3>
+         </div>
+         <div class="csd-content">
+             <ul>
+                 <li>I enjoy Web Development</li>
+                 <li>How to add a button to a website</li>
+                 <li>How to create a to do list</li>
+                 <li>How to create a landing page</li>
+                <li>Add images to a site</li>
+            </ul>
+        </div>
+    </div>
+    <div id="landing page">
+        <a href="/Users/emelypajarito/csd/csd-340/csd-340/module-3/Pajarito_Mod3_2.html">Landing Page</a>
+    </div>
+    </body>
+</html>
